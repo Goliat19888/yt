@@ -5,21 +5,27 @@
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+body {
+  /* width: 100vw;
+  overflow: hidden; */
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f0f; 
+  background: #0f0f0f;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #aaaaaa; 
+  background: #aaaaaa;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #717171; 
+  background: #717171;
 }
 
 body {
@@ -196,6 +202,7 @@ body {
   border-radius: 100%;
   width: 34px;
   height: 34px;
+  margin-right: 25px;
 }
 
 #under {
