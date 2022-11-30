@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta lang="PL-pl" />
+    <link rel="stylesheet" href="style.css" />
+    <title>YT</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="master_head"></div>
+      <div id="video"></div>
+      <div id="under_main">
+        <div id="tags">#css</div>
+        <div id="title">Why I use grid over flexbox for this common layout</div>
+        <div id="under">
+          <div id="channel">
+            <div id="ch_ico" class="ico">
+              <img
+                src="https://yt3.ggpht.com/ytc/AMLnZu8t-B0GQmkMnHoxqlEv78fWiS4hTMUe8wELLwYvvA=s48-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </div>
+            <div id="ico_name">
+              <div id="ch_name">Kevin Powell</div>
+              <div id="ch_subs">670 tys. subskrybentów</div>
+            </div>
+            <div id="subscribe">Subskrybuj</div>
+          </div>
+          <div id="actions">
+            <div id="like_dislike">
+              <div id="like">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQpJREFUSEvVVdEVgjAQSzaRTWQSZRJhEt1ENtFN4jteDytSqFo/uB/oe/SSC2lK/Ln45/74CEDSFcA+kLoA6Ejel0hmA0yae8+GpAElKwtA0glAC8DY1gAOYf07gKQjgHOgWJPsJSlefz2BJNPbdLca2EraAbjZNCSrNZMkJYoaWY8LycZeIrlakl02QGBrWrtLfG9P0nQfSpKxtylS1Qd32fNp09RGki9TJtw0BRtJjZv9x3nD6XpNimjCwQDeZ1sAcw4rOsGcw4oBTGxdeUaVBBjjJD6AJQE8aV8OYBGApfgoBeDyvMVHDLAWATlnbfy5/nEMYBlksbyUM0sgs3dD1oWTQz31zfYBHv7QwRkxWxe5AAAAAElFTkSuQmCC"
+                  alt=""
+                />
+                <div id="like_num">6 tys.</div>
+              </div>
+              <div class="spacer_vert"></div>
+              <div id="dislike">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARhJREFUSEvFVYkNwjAQszeBTWATmAQ6CTAJbAKbGLlqqjQNTYKoiFT1UWLf+XxXYuXFlfHxHwJJBwAnAJsvMnwA6Ej6Ps9AkkGfXwDHRx4k958IHPnZF8muRCRJPRDZy52+T2qQRL8l+fo1QYj+RXJbAs9FXMrgDmBXK08TQSRPdfStBE3FDfJVF1mSrWmL7oOHf1qDNJIa8FaJJn5egyBItIR9JXmMN4TMk0OjUcZGk2R7XgrzZ+IwScHWkzGxOIty4UuaOSz65m63MbJdXzWuIxl6hw3T1tl6LbquSJA24CClpfE6krwuFa2GYJQHwC0a5bOC54haCLLzvmTnGgJ3t7Owy/w8/kxK4NkfTs2hlj3FDFrAcnvfYBPDGeajuOoAAAAASUVORK5CYII="
+                  alt=""
+                />
+                <div id="dislike_num">93</div>
+              </div>
+            </div>
+            <div id="share">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvtlNFtwzAMRI+bNJO0maTxJE0naTpJk0maTa44gzJoRaKCBgb6UX0ZtnSPPJ5l2HjZxvr4mwCSX975ZGbXzIVfdUCSLirxfQZ5FCBOCnkUIPGnDHIXgOQLgGcX07NEtXYANI8uJAWQPAB4C4Jxnmcz25OUeBfSBPihDwCqtqwTgAsACa+Sk0FuAG5HiaGEFMXz6IesIHN3OrMC+KZvF1s2jcT1ver6amaazw1Atsj3ZUMtLqGORcXS1dmlg6r6nUTcrleHxPTo1cnMpl7lpbAIUFqOnunJ0xOHXM6U7JeYNitvATTYlqDS8xkHHa4KDV9nupbGDmrA0czeWwMOgPmqKANt7Y2AeIGl0YyXXSa+ShFJxVPVzPnNFkn5Dg15tPeuu2gkkn3/Bwzd29yiH/XqnBly7CkKAAAAAElFTkSuQmCC"
+                alt=""
+              />
+              <div id="share_name">Udostępnij</div>
+            </div>
+            <div id="dots">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAHdJREFUSEvtk7sNgDAMBe9tApvAKEzCKIxCRmETo0ih4eekoMKuoicrF58c8XHp4/sJgGs4FP1RkZkNwFJmnySlfG7ND3eXLTKzFciQXJukvgCa8lpAkjTeANz8DZBfPwMdcFZUnT8C3L1rbIif7AoLRaHINeA27OfzPBlIr/w4AAAAAElFTkSuQmCC"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div id="description">
+          <div id="description_stats">140 tys. wyświetleń 3 tygodnie temu</div>
+          <div id="description_text">
+            Need some quick columns and you throw a display:flex on there are
+            you’re done, right? Well, it can work, but that doesn’t mean it
+            won’t work for you every single time, as I explore in this video.
+          </div>
+          <div id="show_more">Pokaż więcej</div>
+        </div>
+        <div id="under_comment">
+          <div id="comments">180 komentarzy</div>
+          <div id="sort">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAGRJREFUSEvtk1kOABAQQ/Vobu5m49sSo5lUQvguXV4giQ/E76dv4C58fiIzMzfWQgCgCT00kBtE0s/unmcgb8Ay6KH2AcOQaQP5RPcbOJAzgMK0ZCHHDZh0O9oHf/JObUZz/0QVticaGYZwTB8AAAAASUVORK5CYII="
+              alt=""
+            />Sortuj według
+          </div>
+        </div>
+        <div id="user_ico" class="ico">
+          <img
+            src="https://yt3.ggpht.com/ytc/AMLnZu-cf3lp7wmMoy7_NQnj4zJih0jgGlJHO5Eh6ujCarA=s48-c-k-c0x00ffffff-no-rj"
+            alt=""
+          />
+        </div>
+        <form id="comment">Dodaj komentarz</form>
+      </div>
+      <div id="under_side">
+        <div id="playlist"></div>
+        <div id="filters"></div>
+      </div>
+    </div>
+  </body>
+</html>
