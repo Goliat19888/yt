@@ -62,6 +62,7 @@ body {
 
 #description:hover {
   background-color: #3f3f3f;
+  cursor: pointer;
 }
 
 .spacer {
@@ -236,4 +237,19 @@ body {
   display: flex;
   justify-content: space-around;
   margin-left: 40px;
+}
+
+#more {
+  display: none;
+}
+
+#span_dots {
+  display: inline;
+}
+
+#show_more {
+  display: inline;
+}
+#show_less {
+  display: none;
 }
