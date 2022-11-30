@@ -45,6 +45,11 @@ body {
   font-weight: 500;
 }
 
+#ch_name:hover,
+#ch_ico:hover {
+  cursor: pointer;
+}
+
 #ch_subs {
   margin-top: 2px;
   color: #aaaaaa;
@@ -92,10 +97,6 @@ body {
   height: 34px;
 }
 
-#subscribe:hover {
-  background-color: #3f3f3f;
-}
-
 #like_dislike {
   margin: 5px;
   display: flex;
@@ -106,6 +107,7 @@ body {
   flex-shrink: 0;
   flex-grow: 0;
   position: relative;
+  font-size: 16px;
 }
 
 #dislike,
@@ -122,10 +124,16 @@ body {
 }
 
 #like:hover {
-  background-color: #3f3f3f;
-  padding: 5px 10px;
   border-radius: 25px 0 0 25px;
-  flex-shrink: 0;
+}
+
+#like:hover,
+#dislike:hover,
+#share:hover,
+#dots:hover,
+#subscribe:hover {
+  background-color: #3f3f3f;
+  cursor: pointer;
 }
 
 #dislike {
@@ -133,10 +141,7 @@ body {
 }
 
 #dislike:hover {
-  background-color: #3f3f3f;
-  padding: 5px 10px;
   border-radius: 0 25px 25px 0;
-  /* flex-shrink: 0; */
 }
 
 #dislike_num,
@@ -165,10 +170,6 @@ body {
   height: 34px;
 }
 
-#share:hover {
-  background-color: #3f3f3f;
-}
-
 #dots {
   margin: 5px;
   display: flex;
@@ -178,10 +179,6 @@ body {
   border-radius: 100%;
   width: 34px;
   height: 34px;
-}
-
-#dots:hover {
-  background-color: #3f3f3f;
 }
 
 #under {
