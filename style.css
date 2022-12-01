@@ -128,14 +128,16 @@ body {
   width: 100%;
   display: block;
   min-width: 750px;
-  color: blue;
+  color: #3ea6ff;
   text-decoration: underline;
+  margin-left: 20px;
+  font-size: 12px;
 }
 
 #title {
-  font-size: 20px;
-  margin: 15px 0;
+  margin: 15px 0 15px 20px;
   min-width: 750px;
+  font-size: 20px;
 }
 
 #ico_name {
