@@ -294,6 +294,13 @@ body {
   max-width: 892.88px;
   margin: 0 20px;
   outline: 0;
+  resize: none;
+}
+
+.hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 #comment:focus + .comment_spacer_focused {
