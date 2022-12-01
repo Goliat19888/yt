@@ -40,6 +40,7 @@
 
 #add_comment,
 body,
+#comment_spacer_both,
 #description,
 .spacer,
 #title,
@@ -112,6 +113,11 @@ body {
 #add_comment,
 #under_comment {
   max-width: 892.88px;
+}
+
+#add_comment {
+  margin-top: 20px;
+  /* flex-wrap: wrap; */
 }
 
 #user_ico {
@@ -265,12 +271,41 @@ body {
 }
 
 #comments,
-#sort,
-#comment {
+#sort {
   flex-wrap: nowrap;
   margin-left: 20px;
   min-width: 140px;
   max-width: 892.88px;
+}
+
+#comment {
+  background-color: #0f0f0f;
+  border: 0;
+  color: #ffffff;
+  height: 50%;
+  width: calc(100% - 40px);
+  max-width: 892.88px;
+  margin: 0 20px;
+  outline: 0;
+}
+
+#comment:focus + .comment_spacer {
+  background-position: left;
+  height: 2px;
+}
+
+.comment_spacer {
+  width: calc(100% - 40px);
+  max-width: 892.88px;
+  min-width: 500px;
+  height: 1px;
+  background-color: #3f3f3f;
+  border-radius: 1px;
+  margin: 0 20px;
+  /**/
+  background: linear-gradient(to left, #3f3f3f 50%, #ffffff 50%) right;
+  background-size: 300%;
+  transition: 0.5s ease-out;
 }
 
 /* START Pokaż więcej JS */
