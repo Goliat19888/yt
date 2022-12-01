@@ -289,9 +289,15 @@ body {
   outline: 0;
 }
 
-#comment:focus + .comment_spacer {
-  background-position: left;
+#comment:focus + .comment_spacer_focused {
   height: 2px;
+  width: calc(100% - 40px);
+  transition: 0.2s ease-out;
+}
+
+#comment_spacer_both {
+  display: flex;
+  flex-direction: column;
 }
 
 .comment_spacer {
@@ -300,12 +306,20 @@ body {
   min-width: 500px;
   height: 1px;
   background-color: #3f3f3f;
-  border-radius: 1px;
   margin: 0 20px;
   /**/
   background: linear-gradient(to left, #3f3f3f 50%, #ffffff 50%) right;
   background-size: 300%;
   transition: 0.5s ease-out;
+}
+
+.comment_spacer_focused {
+  align-self: center;
+  width: 0px;
+  max-width: 892.88px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 0 20px;
 }
 
 /* START Pokaż więcej JS */
