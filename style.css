@@ -152,7 +152,8 @@ body {
 }
 
 #ch_name:hover,
-#ch_ico:hover {
+#ch_ico:hover,
+#sort:hover {
   cursor: pointer;
 }
 
@@ -185,43 +186,49 @@ body {
   margin-left: 20px;
 }
 
-#subscribe {
+/* #subscribe {
   margin: 5px;
   padding: 5px 10px;
   border-radius: 25px;
   height: 34px;
-}
+} */
 
-#like_dislike {
+#like_dislike,
+#subscribe {
   margin: 5px;
   padding: 5px 10px;
   border-radius: 25px;
   flex-grow: 0;
   position: relative;
   font-size: 16px;
+  height: 34px;
 }
 
-#dislike,
+/* #dislike,
 #like {
   padding: 5px 10px;
-  /* margin: 0 5px; */
-}
+  margin: 0 5px;
+} */
 
-#like {
-  border-radius: 25px 0 0 25px;
-}
-
+#like,
 #like:hover {
   border-radius: 25px 0 0 25px;
+  padding: 5px 10px;
 }
 
-#dislike {
-  border-radius: 0 25px 25px 0;
-}
+/* #like:hover {
+  border-radius: 25px 0 0 25px;
+} */
 
+#dislike,
 #dislike:hover {
   border-radius: 0 25px 25px 0;
+  padding: 5px 10px;
 }
+
+/* #dislike:hover {
+  border-radius: 0 25px 25px 0;
+} */
 
 #dislike_num,
 #like_num {
