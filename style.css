@@ -19,7 +19,7 @@
 #sort,
 #subscribe,
 #title,
-#under,
+#owner,
 #under_comment,
 #under_main {
   display: flex;
@@ -44,7 +44,7 @@ body,
 #description,
 .spacer,
 #title,
-#under,
+#owner,
 #under_main,
 #under_comment {
   width: 100vw;
@@ -265,7 +265,7 @@ body {
   margin-right: 25px;
 }
 
-#under {
+#owner {
   min-height: 48px;
   min-width: 750px;
   justify-content: space-between;
