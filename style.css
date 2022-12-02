@@ -291,18 +291,16 @@ body {
   background-color: #0f0f0f;
   border: 0;
   color: #ffffff;
-  height: 50%;
   width: calc(100% - 40px);
-  max-width: 892.88px;
+  max-width: 784.88px;
   margin: 0 20px;
   outline: 0;
   resize: none;
+  word-wrap: break-word;
 }
 
-.hiddendiv {
-  display: none;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
 }
 
 #comment:focus + .comment_spacer_focused {
