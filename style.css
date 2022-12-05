@@ -118,7 +118,6 @@ body {
 
 #under_main {
   flex-wrap: wrap;
-  /* display: block; */
   max-width: 892.88px;
 }
 
@@ -129,7 +128,6 @@ body {
 
 #add_comment {
   margin-top: 20px;
-  /* flex-wrap: wrap; */
 }
 
 #user_ico {
@@ -206,70 +204,6 @@ h1 {
   margin-left: 20px;
 }
 
-/* #subscribe {
-  margin: 5px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  height: 34px;
-} */
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* #filters {
-  display: flex;
-  margin-right: 12px;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: 0;
-  align-items: center;
-  position: relative;
-}
-
-#filters::-webkit-scrollbar {
-  display: none;
-}
-
-.w-6 {
-  width: 20px;
-  height: 50px;
-}
-
-.arrow {
-  height: 32px;
-  width: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8px 8px 8px 0px;
-  flex-shrink: 0;
-  position: absolute;
-}
-
-#right_arrow {
-  display: flex;
-  right: 0;
-  width: 100px;
-  background: linear-gradient(to left, #0f0f0f 50%, transparent);
-  justify-content: flex-end;
-}
-
-#left_arrow {
-  display: flex;
-  left: 0;
-  width: 100px;
-  background: linear-gradient(to right, #0f0f0f 50%, transparent);
-  justify-content: flex-start;
-}
-.button {
-  height: 32px;
-  margin: 8px 8px 8px 0px;
-  padding: 0 12px;
-  border-radius: 5px;
-  flex-shrink: 0;
-}
-#wszystkie {
-  background-color: #f1f1f1;
-  color: #0f0f0f;
-} */
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .scrollable-tabs-container {
   font-family: "Roboto", sans-serif;
   background: #0f0f0f;
@@ -513,7 +447,9 @@ h1 {
 .playlist .list {
   display: none;
 }
-
+#comment {
+  color: #3f3f3f;
+}
 #list1 {
-  display: block;
+  display: flex;
 }
