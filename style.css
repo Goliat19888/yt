@@ -509,11 +509,19 @@ h1 {
   display: none;
 }
 /* KONIEC Pokaż więcej JS */
-
+/* 
 .playlist .list {
   display: none;
 }
 
 .playlist .active {
   display: flex;
+} */
+
+.playlist .list {
+  display: none;
+}
+
+#list1 {
+  display: block;
 }
