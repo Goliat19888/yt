@@ -138,19 +138,19 @@
           </div>
           <ul>
             <li>
-              <a href="#" class="active">Wszystkie</a>
+              <a href="#" class="active" onclick="F1()">Wszystkie</a>
             </li>
 
             <li>
-              <a href="#">Podobne</a>
+              <a href="#" onclick="F2()">Podobne</a>
             </li>
 
             <li>
-              <a href="#">Ostatnio przesłane</a>
+              <a href="#" onclick="F3()">Ostatnio przesłane</a>
             </li>
 
             <li>
-              <a href="#">Obejrzane</a>
+              <a href="#" onclick="F4()">Obejrzane</a>
             </li>
           </ul>
           <div class="right-arrow active">
@@ -166,12 +166,10 @@
           </div>
         </div>
         <div class="playlist">
-          <div class="list1 active">1</div>
-          <div class="list">2</div>
-          <div class="list">3</div>
-          <div class="list">4</div>
-          <div class="list">5</div>
-          <div class="list">6</div>
+          <div class="list" id="list1">1</div>
+          <div class="list" id="list2">2</div>
+          <div class="list" id="list3">3</div>
+          <div class="list" id="list4">4</div>
         </div>
       </div>
       <script id="ReadMore">
@@ -267,6 +265,52 @@
           dragging = false;
           tabsList.classList.remove("dragging");
         });
+      </script>
+      <script>
+        const list = document.querySelectorAll(".playlist .list");
+
+        const hideAll = () => {
+          list.forEach((li) => {
+            li.style.display = "none";
+          });
+        };
+
+        function F1() {
+          var x = document.getElementById("list1");
+          hideAll();
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function F2() {
+          var x = document.getElementById("list2");
+          hideAll();
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function F3() {
+          var x = document.getElementById("list3");
+          hideAll();
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function F4() {
+          var x = document.getElementById("list4");
+          hideAll();
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
       </script>
     </div>
   </body>
