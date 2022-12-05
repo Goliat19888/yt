@@ -266,50 +266,28 @@
           tabsList.classList.remove("dragging");
         });
       </script>
-      <script>
-        const list = document.querySelectorAll(".playlist .list");
-
+      <script id="filters_opening_divs">
         const hideAll = () => {
-          list.forEach((li) => {
+          document.querySelectorAll(".playlist .list").forEach((li) => {
             li.style.display = "none";
           });
         };
 
         function F1() {
-          var x = document.getElementById("list1");
           hideAll();
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+          document.getElementById("list1").style.display = "block";
         }
         function F2() {
-          var x = document.getElementById("list2");
           hideAll();
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+          document.getElementById("list2").style.display = "block";
         }
         function F3() {
-          var x = document.getElementById("list3");
           hideAll();
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+          document.getElementById("list3").style.display = "block";
         }
         function F4() {
-          var x = document.getElementById("list4");
           hideAll();
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+          document.getElementById("list4").style.display = "block";
         }
       </script>
     </div>
