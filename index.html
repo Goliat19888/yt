@@ -138,19 +138,19 @@
           </div>
           <ul>
             <li>
-              <a href="#" class="active" onclick="F1()">Wszystkie</a>
+              <a href="#" class="active" onclick="showDiv(1)">Wszystkie</a>
             </li>
 
             <li>
-              <a href="#" onclick="F2()">Podobne</a>
+              <a href="#" onclick="showDiv(2)">Podobne</a>
             </li>
 
             <li>
-              <a href="#" onclick="F3()">Ostatnio przesłane</a>
+              <a href="#" onclick="showDiv(3)">Ostatnio przesłane</a>
             </li>
 
             <li>
-              <a href="#" onclick="F4()">Obejrzane</a>
+              <a href="#" onclick="showDiv(4)">Obejrzane</a>
             </li>
           </ul>
           <div class="right-arrow active">
@@ -267,28 +267,15 @@
         });
       </script>
       <script id="filters_opening_divs">
-        const hideAll = () => {
+        let hideAll = () => {
           document.querySelectorAll(".playlist .list").forEach((li) => {
             li.style.display = "none";
           });
         };
-
-        function F1() {
+        showDiv = (divNumber) => {
           hideAll();
-          document.getElementById("list1").style.display = "block";
-        }
-        function F2() {
-          hideAll();
-          document.getElementById("list2").style.display = "block";
-        }
-        function F3() {
-          hideAll();
-          document.getElementById("list3").style.display = "block";
-        }
-        function F4() {
-          hideAll();
-          document.getElementById("list4").style.display = "block";
-        }
+          document.querySelector("#list" + divNumber).style.display = "flex";
+        };
       </script>
     </div>
   </body>
