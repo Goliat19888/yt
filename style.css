@@ -1,455 +1,279 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", "Arial", sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta lang="PL-pl" />
+    <link rel="stylesheet" href="style.css" />
+    <title>YT</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div id="main_main">
+      <main id="container">
+        <section id="master_head"></section>
+        <section id="video"></section>
+        <section id="under_main">
+          <section id="tags">#css</section>
+          <section id="title"><h1>Why I use grid over flexbox for this common layout</h1></section>
+          <section id="owner">
+            <div id="channel">
+              <div id="ch_ico" class="ico">
+                <img src="https://yt3.ggpht.com/ytc/AMLnZu8t-B0GQmkMnHoxqlEv78fWiS4hTMUe8wELLwYvvA=s48-c-k-c0x00ffffff-no-rj" alt="" />
+              </div>
+              <div id="ico_name">
+                <div id="ch_name">Kevin Powell</div>
+                <div id="ch_subs">670 tys. subskrybentów</div>
+              </div>
+              <div id="subscribe">Subskrybuj</div>
+            </div>
+            <div id="actions">
+              <div id="like_dislike">
+                <div id="like">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQpJREFUSEvVVdEVgjAQSzaRTWQSZRJhEt1ENtFN4jteDytSqFo/uB/oe/SSC2lK/Ln45/74CEDSFcA+kLoA6Ejel0hmA0yae8+GpAElKwtA0glAC8DY1gAOYf07gKQjgHOgWJPsJSlefz2BJNPbdLca2EraAbjZNCSrNZMkJYoaWY8LycZeIrlakl02QGBrWrtLfG9P0nQfSpKxtylS1Qd32fNp09RGki9TJtw0BRtJjZv9x3nD6XpNimjCwQDeZ1sAcw4rOsGcw4oBTGxdeUaVBBjjJD6AJQE8aV8OYBGApfgoBeDyvMVHDLAWATlnbfy5/nEMYBlksbyUM0sgs3dD1oWTQz31zfYBHv7QwRkxWxe5AAAAAElFTkSuQmCC"
+                    alt="" />
+                  <div id="like_num">6 tys.</div>
+                </div>
+                <div class="spacer_vert"></div>
+                <div id="dislike">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARhJREFUSEvFVYkNwjAQszeBTWATmAQ6CTAJbAKbGLlqqjQNTYKoiFT1UWLf+XxXYuXFlfHxHwJJBwAnAJsvMnwA6Ej6Ps9AkkGfXwDHRx4k958IHPnZF8muRCRJPRDZy52+T2qQRL8l+fo1QYj+RXJbAs9FXMrgDmBXK08TQSRPdfStBE3FDfJVF1mSrWmL7oOHf1qDNJIa8FaJJn5egyBItIR9JXmMN4TMk0OjUcZGk2R7XgrzZ+IwScHWkzGxOIty4UuaOSz65m63MbJdXzWuIxl6hw3T1tl6LbquSJA24CClpfE6krwuFa2GYJQHwC0a5bOC54haCLLzvmTnGgJ3t7Owy/w8/kxK4NkfTs2hlj3FDFrAcnvfYBPDGeajuOoAAAAASUVORK5CYII="
+                    alt="" />
+                  <div id="dislike_num">93</div>
+                </div>
+              </div>
+              <div id="share">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEvtlNFtwzAMRI+bNJO0maTxJE0naTpJk0maTa44gzJoRaKCBgb6UX0ZtnSPPJ5l2HjZxvr4mwCSX975ZGbXzIVfdUCSLirxfQZ5FCBOCnkUIPGnDHIXgOQLgGcX07NEtXYANI8uJAWQPAB4C4Jxnmcz25OUeBfSBPihDwCqtqwTgAsACa+Sk0FuAG5HiaGEFMXz6IesIHN3OrMC+KZvF1s2jcT1ver6amaazw1Atsj3ZUMtLqGORcXS1dmlg6r6nUTcrleHxPTo1cnMpl7lpbAIUFqOnunJ0xOHXM6U7JeYNitvATTYlqDS8xkHHa4KDV9nupbGDmrA0czeWwMOgPmqKANt7Y2AeIGl0YyXXSa+ShFJxVPVzPnNFkn5Dg15tPeuu2gkkn3/Bwzd29yiH/XqnBly7CkKAAAAAElFTkSuQmCC"
+                  alt="" />
+                <div id="share_name">Udostępnij</div>
+              </div>
+              <div id="dots">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAHdJREFUSEvtk7sNgDAMBe9tApvAKEzCKIxCRmETo0ih4eekoMKuoicrF58c8XHp4/sJgGs4FP1RkZkNwFJmnySlfG7ND3eXLTKzFciQXJukvgCa8lpAkjTeANz8DZBfPwMdcFZUnT8C3L1rbIif7AoLRaHINeA27OfzPBlIr/w4AAAAAElFTkSuQmCC"
+                  alt="" />
+              </div>
+            </div>
+          </section>
+          <div class="spacer"></div>
+          <section id="description" onclick="readmore()">
+            <div id="description_stats">140 tys. wyświetleń 3 tygodnie temu</div>
+            <div id="description_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum nesciunt a dolores voluptatum soluta natus, inventore
+              exercitationem libero ducimus saepe eos, debitis modi aperiam, dicta doloribus possimus magni porro.<span id="span_dots">
+                ... </span
+              ><span id="more">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, et facere. Magnam facilis dolorem libero eum
+                exercitationem nemo non soluta praesentium eligendi similique! Sit temporibus architecto placeat iure repellat, eius natus
+                provident praesentium quos nemo a nobis nisi blanditiis explicabo neque ex. Quisquam, cumque? Quo est velit neque, fuga eius
+                voluptatibus, exercitationem quia commodi molestiae voluptates soluta provident minus rem itaque ut enim, officiis impedit
+                voluptate in corporis ex recusandae vel. Voluptates incidunt accusamus eum, quibusdam fuga rerum maxime repudiandae omnis.
+                Impedit voluptatum porro praesentium officia nemo magni quaerat neque temporibus iste pariatur similique illo in cupiditate
+                natus unde fugiat optio sint non amet, eius ducimus quod? Quis illum corporis quae dolorem dolorum velit, quam numquam
+                laboriosam rem officiis temporibus, a consectetur quibusdam doloremque culpa illo animi nam facere repudiandae delectus.
+                Ipsum iste molestias repellat libero incidunt soluta iure in dolores, nesciunt eveniet dicta itaque culpa porro nihil fuga
+                sequi. Eaque fuga minima soluta, assumenda dolorem, deleniti dicta ipsum quis repellendus possimus deserunt impedit
+                perspiciatis odit labore. Fugit quas architecto, cupiditate in, veniam perspiciatis omnis repellendus at non placeat
+                consequuntur autem quis ipsa nesciunt nam alias? Harum ullam aspernatur ut sequi, quos repellat soluta, distinctio quia
+                laborum nesciunt, quibusdam corrupti veritatis eius cumque recusandae non commodi totam aliquam sed illum suscipit odit!
+                Nisi amet ex voluptatum rerum blanditiis recusandae culpa illum exercitationem, molestias iste harum. Sunt quisquam nemo est
+                ipsa corrupti eaque amet totam! Corrupti earum nostrum quas illo quam ducimus amet fugiat aperiam impedit expedita, autem
+                temporibus assumenda quos reprehenderit dolore consequatur aut. Obcaecati enim velit recusandae quidem assumenda earum,
+                aspernatur praesentium molestias iusto distinctio dolorum modi at dolorem reiciendis voluptates dicta sunt, soluta quam
+                provident. Dolore natus quidem quibusdam eos. Odit, dolorum temporibus, harum at ut neque quas minima facilis necessitatibus
+                magni recusandae, est tempore qui dolorem beatae adipisci quidem. Ab impedit iusto cupiditate iure aspernatur, aliquam
+                obcaecati modi nulla culpa asperiores esse quae quisquam ratione corporis quo nisi laborum excepturi enim labore, magnam
+                nostrum hic deleniti. Fuga ad rerum nostrum inventore esse quaerat itaque, minima est nihil commodi quas mollitia, culpa
+                harum iure quam non quibusdam facere suscipit at fugit nisi id saepe. Accusantium quaerat dicta, fuga porro, illo deserunt
+                hic, esse dolore qui voluptate facere minima assumenda consequuntur obcaecati aliquid iusto. Blanditiis doloremque ea,
+                animi, voluptates nam optio fugit nostrum, consequatur reprehenderit non corrupti. Nihil repellendus officia quam modi, qui
+                provident explicabo minima quae dolorum earum neque est! Ex aperiam quisquam vel asperiores quaerat commodi autem amet
+                temporibus? Assumenda ut nemo in mollitia, similique nisi sapiente unde, alias necessitatibus veritatis placeat ratione ad
+                officia cum, aliquam provident sequi tempora nam! Fuga ipsa non magni minima voluptatibus, quasi alias optio libero maxime
+                accusamus sint autem consectetur, consequatur et tempora nulla, error sed? Nemo porro impedit esse, rem, placeat iste quas
+                magni quod eos quibusdam nisi explicabo eaque architecto sunt provident aspernatur ratione optio tempore voluptas. Officia
+                libero voluptatem quia. Consequuntur culpa alias ratione harum illum repellat at qui nostrum voluptate non a sequi enim,
+                atque quos repellendus.</span
+              >
+              <div id="show_more">Pokaż więcej</div>
+            </div>
+            <div id="show_less">Pokaż mniej</div>
+          </section>
+        </section>
+        <section id="comment_section">
+          <div id="under_comment">
+            <div id="comments">180 komentarzy</div>
+            <div id="sort">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAGRJREFUSEvtk1kOABAQQ/Vobu5m49sSo5lUQvguXV4giQ/E76dv4C58fiIzMzfWQgCgCT00kBtE0s/unmcgb8Ay6KH2AcOQaQP5RPcbOJAzgMK0ZCHHDZh0O9oHf/JObUZz/0QVticaGYZwTB8AAAAASUVORK5CYII="
+                alt="" />Sortuj według
+            </div>
+          </div>
+          <div id="add_comment">
+            <div id="user_ico" class="ico">
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu-cf3lp7wmMoy7_NQnj4zJih0jgGlJHO5Eh6ujCarA=s48-c-k-c0x00ffffff-no-rj" alt="" />
+            </div>
+            <div id="comment_spacer_both">
+              <div id="comment" tabindex="0" data-text="Dodaj komentarz" contenteditable="true"></div>
+              <div class="comment_spacer_focused"></div>
+              <div class="comment_spacer"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="under_side">
+        <div class="scrollable-tabs-container">
+          <div class="left-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="active" onclick="showDiv(1)">Wszystkie</a>
+            </li>
 
-#actions,
-#add_comment,
-#comments,
-#container,
-#channel,
-#dislike,
-#dots,
-#ico_name,
-#like,
-#like_dislike,
-#share,
-#sort,
-#subscribe,
-#title,
-#owner,
-#under_comment,
-#under_main,
-#main_main,
-.button,
-.arrow {
-  display: flex;
-}
+            <li>
+              <a href="#" onclick="showDiv(2)">Podobne</a>
+            </li>
 
-#main_main,
-#container {
-  justify-content: center;
-}
+            <li>
+              <a href="#" onclick="showDiv(3)">Ostatnio przesłane</a>
+            </li>
 
-#actions,
-#channel,
-#comments,
-#container,
-#dislike,
-#like,
-#like_dislike,
-#sort,
-#share,
-#subscribe,
-.button,
-.arrow {
-  align-items: center;
-}
+            <li>
+              <a href="#" onclick="showDiv(4)">Obejrzane</a>
+            </li>
+          </ul>
+          <div class="right-arrow active">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="playlist">
+          <div class="list" id="list1">1</div>
+          <div class="list" id="list2">2</div>
+          <div class="list" id="list3">3</div>
+          <div class="list" id="list4">4</div>
+        </div>
+      </div>
+      <script id="ReadMore">
+        function readmore() {
+          var dots = document.getElementById("span_dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+          var txt = document.getElementById("show_more");
+          var txt2 = document.getElementById("show_less");
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            // btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+            show_less.style.display = "none";
+            show_more.style.display = "inline";
+          } else {
+            dots.style.display = "none";
+            // btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            show_less.style.display = "inline";
+            show_more.style.display = "none";
+          }
+        }
+      </script>
+      <script id="filters">
+        const tabs = document.querySelectorAll(".scrollable-tabs-container a");
+        const rightArrow = document.querySelector(".scrollable-tabs-container .right-arrow svg");
+        const leftArrow = document.querySelector(".scrollable-tabs-container .left-arrow svg");
+        const tabsList = document.querySelector(".scrollable-tabs-container ul");
+        const leftArrowContainer = document.querySelector(".scrollable-tabs-container .left-arrow");
+        const rightArrowContainer = document.querySelector(".scrollable-tabs-container .right-arrow");
+        //
 
-#add_comment,
-body,
-#comment_spacer_both,
-#description,
-.spacer,
-#title,
-#owner,
-#under_main,
-#under_comment {
-  width: 100vw;
-}
+        //
+        const removeAllActiveClasses = () => {
+          tabs.forEach((tab) => {
+            tab.classList.remove("active");
+          });
+        };
 
-#description,
-#dislike,
-#dots,
-#share,
-#subscribe,
-#like,
-.button {
-  background-color: #272727;
-}
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            removeAllActiveClasses();
+            tab.classList.add("active");
+          });
+        });
 
-#ch_ico,
-#like_dislike,
-#tags {
-  flex-shrink: 0;
-}
+        const manageIcons = () => {
+          if (tabsList.scrollLeft >= 20) {
+            leftArrowContainer.classList.add("active");
+          } else {
+            leftArrowContainer.classList.remove("active");
+          }
 
-#like:hover,
-#dislike:hover,
-#description:hover,
-#share:hover,
-#dots:hover,
-#subscribe:hover,
-.button:hover,
-.arrow:hover {
-  background-color: #3f3f3f;
-  cursor: pointer;
-}
+          let maxScrollValue = tabsList.scrollWidth - tabsList.clientWidth - 20;
+          console.log("scroll width: ", tabsList.scrollWidth);
+          console.log("client width: ", tabsList.clientWidth);
 
-#container {
-  flex-direction: column;
-}
+          if (tabsList.scrollLeft >= maxScrollValue) {
+            rightArrowContainer.classList.remove("active");
+          } else {
+            rightArrowContainer.classList.add("active");
+          }
+        };
 
-/*START SCROLLBAR*/
-body {
-  overflow-x: hidden;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #0f0f0f;
-}
-::-webkit-scrollbar-thumb {
-  background: #aaaaaa;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #717171;
-}
-/*STOP SCROLLBAR*/
+        rightArrow.addEventListener("click", () => {
+          tabsList.scrollLeft += 300;
+          manageIcons();
+        });
 
-body {
-  background-color: #0f0f0f;
-  color: #ffffff;
-}
+        leftArrow.addEventListener("click", () => {
+          tabsList.scrollLeft -= 300;
+          manageIcons();
+        });
 
-#under_main {
-  flex-wrap: wrap;
-  max-width: 892.88px;
-}
+        tabsList.addEventListener("scroll", manageIcons);
 
-#add_comment,
-#under_comment {
-  max-width: 892.88px;
-}
+        let dragging = false;
 
-#add_comment {
-  margin-top: 20px;
-}
+        const drag = (e) => {
+          if (!dragging) return;
+          tabsList.classList.add("dragging");
+          tabsList.scrollLeft -= e.movementX;
+        };
 
-#user_ico {
-  min-width: 48px;
-}
+        tabsList.addEventListener("mousedown", () => {
+          dragging = true;
+        });
 
-#tags {
-  width: 100%;
-  display: block;
-  min-width: 750px;
-  color: #3ea6ff;
-  text-decoration: underline;
-  margin-left: 20px;
-  font-size: 12px;
-}
+        tabsList.addEventListener("mousemove", drag);
 
-#title {
-  margin-left: 15px;
-  min-width: 750px;
-  line-height: 2.8rem;
-}
-
-h1 {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "YouTube Sans", "Roboto", sans-serif;
-}
-
-#ico_name {
-  flex-flow: column;
-  width: 15vw;
-  margin-left: 20px;
-  margin-top: 8px;
-  min-width: 190px;
-}
-
-#ch_name {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#ch_name:hover,
-#ch_ico:hover,
-#sort:hover {
-  cursor: pointer;
-}
-
-#ch_subs {
-  margin-top: 2px;
-  color: #aaaaaa;
-  font-size: 12px;
-}
-
-#description {
-  padding: 10px 5px;
-  border-radius: 15px;
-  margin: 0 20px;
-  min-width: 750px;
-}
-
-.spacer {
-  height: 1px;
-  background-color: #3f3f3f;
-  border-radius: 1px;
-  margin: 10px 20px;
-  min-width: 750px;
-}
-
-.ico {
-  border-radius: 25px;
-  overflow: hidden;
-  width: 48px;
-  height: 48px;
-  margin-left: 20px;
-}
-
-.scrollable-tabs-container {
-  font-family: "Roboto", sans-serif;
-  background: #0f0f0f;
-  font-size: 14px;
-  max-width: 700px;
-  margin: 16px auto;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.scrollable-tabs-container svg {
-  width: 24px;
-  height: 24px;
-  padding: 8px;
-  cursor: pointer;
-  color: #ffffff;
-  border-radius: 50%;
-  pointer-events: auto;
-}
-
-.scrollable-tabs-container ul {
-  display: flex;
-  gap: 16px;
-  padding: 12px 24px;
-  margin: 0;
-  list-style: none;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-
-.scrollable-tabs-container ul.dragging a {
-  pointer-events: none;
-}
-
-.scrollable-tabs-container ul.dragging {
-  scroll-behavior: auto;
-}
-
-.scrollable-tabs-container ul::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollable-tabs-container a {
-  color: #ffffff;
-  text-decoration: none;
-  background: #3f3f3f;
-  padding: 4px 24px;
-  display: inline-block;
-  border-radius: 4px;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.scrollable-tabs-container a.active {
-  background: #ffffff;
-  color: #0f0f0f;
-}
-
-.scrollable-tabs-container .right-arrow,
-.scrollable-tabs-container .left-arrow {
-  position: absolute;
-  height: 100%;
-  width: 100px;
-  top: 0;
-  display: none;
-  align-items: center;
-  padding: 0 10px;
-  pointer-events: none;
-}
-
-.scrollable-tabs-container .right-arrow.active,
-.scrollable-tabs-container .left-arrow.active {
-  display: flex;
-}
-
-.scrollable-tabs-container .right-arrow {
-  right: 0;
-  background: linear-gradient(to left, #0f0f0f 50%, transparent);
-  justify-content: flex-end;
-}
-
-.scrollable-tabs-container .left-arrow {
-  background: linear-gradient(to right, #0f0f0f 50%, transparent);
-}
-
-.scrollable-tabs-container svg:hover {
-  background: #3f3f3f;
-}
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-#like_dislike,
-#subscribe {
-  margin: 5px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  flex-grow: 0;
-  position: relative;
-  font-size: 16px;
-  height: 34px;
-}
-
-#like,
-#like:hover {
-  border-radius: 25px 0 0 25px;
-  padding: 5px 10px;
-}
-
-#dislike,
-#dislike:hover {
-  border-radius: 0 25px 25px 0;
-  padding: 5px 10px;
-}
-
-#dislike_num,
-#like_num {
-  margin-left: 10px;
-}
-
-.spacer_vert {
-  width: 1px;
-  height: 60%;
-  background-color: #3f3f3f;
-  border-radius: 1px;
-  padding: 0;
-  /* margin: 10px 20px; */
-  position: absolute;
-  left: 102.21px;
-}
-
-#share {
-  margin: 5px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  height: 34px;
-}
-
-#dots {
-  margin: 5px;
-  padding: 5px 5px;
-  align-content: center;
-  border-radius: 100%;
-  width: 34px;
-  height: 34px;
-  margin-right: 25px;
-}
-
-#owner {
-  min-height: 48px;
-  min-width: 750px;
-  justify-content: space-between;
-}
-
-#channel {
-  width: 387.16px;
-}
-
-#actions {
-  min-width: 354px;
-}
-
-#comments,
-#sort {
-  flex-wrap: nowrap;
-  margin-left: 20px;
-  min-width: 140px;
-  max-width: 892.88px;
-}
-
-#comment {
-  background-color: #0f0f0f;
-  border: 0;
-  color: #ffffff;
-  width: calc(100% - 40px);
-  max-width: 784.88px;
-  margin: 0 20px;
-  outline: 0;
-  resize: none;
-  word-wrap: break-word;
-}
-
-#under_side {
-  width: 426px;
-  margin: 24px 0 0;
-  padding: 0 24px 0 0;
-}
-
-[contentEditable="true"]:empty:not(:focus):before {
-  content: attr(data-text);
-}
-
-#comment:focus + .comment_spacer_focused {
-  height: 2px;
-  width: calc(100% - 40px);
-  transition: 0.2s ease-out;
-}
-
-#comment_spacer_both {
-  display: flex;
-  flex-direction: column;
-}
-
-.comment_spacer {
-  width: calc(100% - 40px);
-  max-width: 892.88px;
-  min-width: 500px;
-  height: 1px;
-  background-color: #3f3f3f;
-  margin: 0 20px;
-  /**/
-  background: linear-gradient(to left, #3f3f3f 50%, #ffffff 50%) right;
-  background-size: 300%;
-  transition: 0.5s ease-out;
-}
-
-.comment_spacer_focused {
-  align-self: center;
-  width: 0px;
-  max-width: 892.88px;
-  height: 2px;
-  background-color: #ffffff;
-  margin: 0 20px;
-}
-
-/* START Pokaż więcej JS */
-#more {
-  display: none;
-}
-#span_dots {
-  display: inline;
-}
-#show_more {
-  display: inline;
-}
-#show_less {
-  display: none;
-}
-/* KONIEC Pokaż więcej JS */
-
-.playlist .list {
-  display: none;
-}
-#comment {
-  color: #3f3f3f;
-}
-#list1 {
-  display: flex;
-}
+        document.addEventListener("mouseup", () => {
+          dragging = false;
+          tabsList.classList.remove("dragging");
+        });
+      </script>
+      <script id="filters_opening_divs">
+        showDiv = (divNumber) => {
+          document.querySelectorAll(".playlist .list").forEach((li) => {
+            li.style.display = "none";
+          });
+          document.querySelector("#list" + divNumber).style.display = "flex";
+        };
+      </script>
+    </div>
+  </body>
+</html>
