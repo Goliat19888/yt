@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.popup {
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  color: aliceblue;
+  display: flex;
+  font-size: 900px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 150px;
+  height: 60px;
+  margin-top: 25px;
+}
